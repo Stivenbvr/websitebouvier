@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>Stiven Bouvier│Music</title>
+    <link rel="shortcut icon" href="/imgnonstop/LOGOSTIVENBOUVIER.png">
+    <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/css/styleplayer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!--Showcase-->
+    <header class="showcase">
+        <div class="blackhead" >
+            <h1 id="blackopen">NONSTOP COMMING SOON - STIVEN BOUVIER 2022</h1>
+        </div>
+        <div class="whitehead">
+            <div class="menumobile">
+            <button class="nav-toggle"  aria-label="abrirmenú"><ion-icon name="reorder-four-outline"></ion-icon></button> 
+        </div>
+        <div class="korean">
+            <a class="cta" href="/store.html" target="_blank">
+                <span class="hover-underline-animation">Buy New Album </span>
+                <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
+                <path id="Path_10" data-name="Path 10" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)"></path>
+                </svg>
+            </a>
+        </div>
+        
+        <div class="nav-menurigth">
+            <a href="#" id="lupa">
+                <ion-icon name="search-outline"></ion-icon>
+            </a>
+        </div>
+    </header>
+    <section class="container">
+        <nav class="nav-main">
+                
+                <ul class="nav-menu">
+                    <li>
+                        <a href="/home.html"> Home </a>
+                    </li>
+                    <li>
+                        <a href="/news.html"> News </a>
+                    </li>
+                    <li>
+                        <a href="/music.html"> Music </a>
+                    </li>
+                    <li>
+                        <a href="/store.html"> Store </a>
+                    </li>
+            </ul>
+        </nav>
+
+                <img class="logomenu" src="/imgnonstop/Logotransparente.png" alt="Bouviernews logo" class="nav-brand">
+    </section>
+        <article class="coming">
+            <div class="comingsoon">
+            <h1>CHECK IT OUT NONSTOP NOW !</h1>
+            </div>
+            <div class="logo">
+                <a target="_blank" href="https://www.youtube.com/channel/UC-DihFjlogk-dlhJ3kqKVNw"><img class="spotimg" src="/icons3D/spotify (1).png">
+                    Listen In Spotify
+                </a>
+            </div>
+        </article>
+    <aside class="reproductorn">
+            <div class="main">               
+                
+                <!--left part-->
+                
+                <div class="left">
+
+                    <!--Song Image-->
+                    <img id="track_image">
+                    <div class="volume">
+                    <p id = "volume_show">90</p>
+                    <i class="fa fa-volume-up" aria-hidden="true" id="volume_icon"onclick="mute_sound()"></i>
+                    <input type="range" min="0" max="100" value="90" onchange="volume_change()" id="volume">
+                </div>
+                    </div>
+
+                    <!--Right part-->
+
+                    <div class="right">
+                        <div class="show_song_no">
+                            <p id="presents">1</p>
+                            <p>/</p>
+                            <p id="total">8</p>
+                        </div>
+                        <!--song title-->
+                        <div class="titulosmp3">
+                            <p id="artist"><n>artist</n></p>
+                            <p id="title">Title.mp3</p>
+                        </div>
+                        
+                        
+                        <!--Middle Part-->
+                        
+                        <div class="middle">
+                            <button onclick="previous_song()" id="pre" ><i class="fa fa-step-backward" aria-hidden="true"></i></button>
+                            <button onclick="justplay()" id="play"><i class="fa fa-play" aria-hidden="true"></i></button>
+                            <button onclick="next_song()" id="next"><i class="fa fa-step-forward" aria-hidden="true"></i></button>
+                        </div>
+                        
+                        
+                        <!--Song Duration Part-->
+                        
+                            <div class="duration">
+                                <input type="range" min="0" max="100" value="0" id="duration_slider" onchange="change_duration()">
+                            </div>
+                            <button id="auto" onclick="autoplay_switch()">Auto Play<i class="fa fa-repeat" aria-hidden="true"></i></button>
+                    </div>
+
+            </div>
+            
+            </div>
+        </aside>
+
+            <!--Contenido News-->
+            
+                    <article class="article">
+                        <div class="medium">
+                            <p>Bouvier In June Releases is Album.</p>
+                        </div>
+
+                        <!--informacion revista-->
+                        
+                        <div class="inforevista">
+                            <div>
+                                <p class="newsletterrevista">Listen NonStop In YouTube.</p>
+                                <a class="suscribemusic"target="_blank" href="https://www.youtube.com/channel/UC-DihFjlogk-dlhJ3kqKVNw">Suscribe</a>
+                                <img class="revista" src="/imgnonstop/Lovesick.jpg" alt="">
+                            </div>
+                            <div>
+                                
+                        </div>
+                    </article>
+                    <footer class="footer">
+                        <nav class="nav-mainfooter">
+                
+                            <ul class="nav-menufooter">
+                                <li>
+                                    <a href="/home.html"> Suscribe Now</a>
+                                </li>
+                                <li>
+                                    <a href="/news.html"> Newsletter </a>
+                                </li>
+                                <li>
+                                    <a href="/music.html"> New Album </a>
+                                </li>
+                                <li>
+                                    <a href="/store.html"> Buy Now </a>
+                                </li>
+                    </footer>
+                    <aside class="piepag">
+                        <div>
+                        <img src="/imgnonstop/LOGOSTIVENBOUVIER.png">
+                        </div> 
+                            <h5>
+                                <ion-icon name="lock-closed-outline"></ion-icon>
+                                    All Rights Reserved © 2022 - Stiven Bouvier.
+                            </h5>
+                    </aside>
+
+<script src="/Javascript/success.js"></script><!--Iconos Footer-->
+<script src="/Javascript/player.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="/Javascript/index.js"></script>
+
+</body>
+</html>

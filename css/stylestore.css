@@ -1,0 +1,3362 @@
+@font-face {
+  font-family: "banners";
+  src: url(/fuentes/Hey\ August.ttf);
+}
+@font-face {
+  font-family: "bannersy";
+  src: url(/fuentes/Brotherhood\ Brush.ttf);
+}
+@font-face {
+  font-family: "school";
+  src: url(/fuentes/BEACHWORKS.ttf);
+}
+@font-face{
+  font-family: 'academyw';
+  src: url(/fuentes/Academy.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #000000;
+  font-size: 16px;
+  font-family: "Oswald", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Showcase */
+.showcase {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  background-color: #ffffff;
+  position: fixed;
+  z-index: 10;
+}
+
+.cta {
+  border: none;
+  background: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.cta span {
+  padding-bottom: 7px;
+  letter-spacing: 4px;
+  font-size: 20px;
+  padding-right: 15px;
+  text-transform: uppercase;
+}
+
+.cta svg {
+  transform: translateX(-8px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active svg {
+  transform: scale(0.9);
+}
+
+.hover-underline-animation {
+  position: relative;
+  color: black;
+  padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1.5px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.nav-menurigth {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 70px;
+  height: 70px;
+  position: relative;
+  left: 90%;
+  padding: 10px;
+}
+
+.nav-menurigth ion-icon:hover {
+  color: #000000;
+  width: 20px;
+  height: 20px;
+}
+
+.nav-menurigth a ion-icon {
+  color: #000000;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.nav-toggle {
+  color: white;
+  background: none;
+  border: none;
+  font-size: 40px;
+  padding: 0 20px;
+  line-height: 60px;
+  cursor: pointer;
+  display: none;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 800px;
+  background-image: url(/imgnonstop/IMG_1199.JPG);
+  background-position: 0px -500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Navegacion */
+.nav-main {
+  position: relative;
+  top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  font-size: 37px;
+  height: 200px;
+}
+
+.covermenu {
+  display: none;
+}
+
+.nav-main2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  font-size: 25px;
+  height: 200px;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-menu2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* nav left */
+.nav-main li {
+  padding: 10px;
+  margin: 10px;
+}
+
+.nav-main ul li a {
+  padding: 4px;
+  color: #ffffff;
+}
+
+.nav-main li a:hover {
+  font-size: 40px;
+}
+
+.nav-main2 li {
+  padding: 10px;
+  margin: 10px;
+}
+
+.nav-main2 li a {
+  padding: 4px;
+  color: #ffffff;
+}
+
+.nav-main2 li a:hover {
+  font-size: 30px;
+  
+}
+
+.container img {
+  width: 250px;
+  height: 250px;
+  position: relative;
+  display: none;
+}
+
+.welcome {
+  color: #000000;
+  width: 100%;
+  height: 400px;
+  display: grid;
+  grid-template-columns: 30% 25%;
+  font-size: 30px;
+  justify-content: center;
+  margin-top: 70px;
+  position: relative;
+}
+
+.welcome h1 {
+  display: flex;
+  width: 100%;
+  font-size: 80px;
+  text-align: left;
+  top: 130px;
+  color: #000;
+  position: relative;
+}
+
+.containers {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25% 25%;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 600px;
+  top: 150px;
+  position: relative;
+}
+
+#spotify {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  cursor: pointer;
+}
+
+#spotify:hover {
+  width: 110px;
+  height: 110px;
+}
+
+#youtube {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
+
+#youtube:hover {
+  width: 110px;
+  height: 110px;
+}
+
+#itunes {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
+
+#itunes:hover {
+  width: 110px;
+  height: 110px;
+}
+
+#soundcload {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  /*StoreMusic*/
+}
+
+#soundcload:hover {
+  width: 110px;
+  height: 110px;
+}
+
+#dezeer {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  cursor: pointer;
+}
+
+#dezeer:hover {
+  width: 110px;
+  height: 110px;
+}
+
+.animated-background {
+  width: 100%;
+  height: 1500px;
+  background: linear-gradient(to right, #f6e4f6, #cbfffd, #f4e7f6);
+  background-size: 400% 400%;
+  animation: animate 10s infinite ease-in-out;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.titulostore{
+  position: relative;
+  top: 100px;
+}
+
+.titulostore h1 {
+  font-size: 170px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  position: relative;
+  color: rgb(0, 0, 0);
+  top: 100px;
+}
+
+.titulostore h1:hover {
+  background-color: black;
+  color: white;
+}
+
+.tiendamusic {
+  color: #000;
+  width: 100%;
+  position: relative;
+  top: 200px;
+  height: 1500px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+
+.titulomusica h1 {
+  position: relative;
+  top: 188px;
+  left: -70px;
+  text-align: center;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.titulomusica h2{
+  width: 200px;
+  position: relative;
+  top: 155px;
+  left: 47%;
+  text-align: center;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#applemusic {
+  width: 250px;
+  height: 80px;
+  position: relative;
+  top: 88px;
+  right: 200px;
+  cursor: pointer;
+  
+}
+
+#playstoremusic {
+  width: 250px;
+  height: 80px;
+  position: relative;
+  top: 6px;
+  left: 10%;
+  cursor: pointer;
+  
+  
+}
+
+.buy {
+  padding: 0.5em 2em;
+  font-size:  2em;
+  position: relative;
+  left: 33%;
+  top: 300px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+
+}
+
+.buy:hover{
+  background-color: rgb(255, 255, 255);
+  border: solid grey 0.5px;
+  box-shadow: 1px 4px 5px black;
+  color: black;
+  position: relative;
+  top:300px;
+  width: 12em;
+  height: 2em;
+  font-size: 2.1em;
+}
+
+.titulomusica p {
+  padding-right: 8%;
+  position: relative;
+  font-size: 25px;
+  top: 250px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card {
+  margin-top: 100px;
+  margin-left: 50px;
+  width: 600px;
+  height: 600px;
+  border-radius: 1em;
+  padding: 1.5rem;
+  background: #f5f5f5;
+  position: relative;
+  left: 15%;
+  top: 70px;
+  border-radius: 15px;
+  display: flex;
+  align-items: flex-end;
+  transition: 0.4s ease-out;
+  box-shadow: 0px 7px 20px rgba(43, 8, 37, 0.2);
+}
+
+.card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 700px;
+  height: 700px;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  z-index: 2;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.card-info {
+  width: 450px;
+  height: 250px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  left: 18%;
+  bottom: 30%;
+  z-index: 3;
+  color: #f5f5f5;
+  opacity: 0;
+  transform: translateY(20%);
+  transition: 0.5s;
+}
+
+/*Text*/
+.text-title {
+  font-size: 90px;
+  font-weight: 500;
+}
+
+.text-body {
+  letter-spacing: 1px;
+  font-size: 25px;
+  margin: 5px 0 15px 0;
+}
+
+.card-info p {
+  position: relative;
+  bottom: 20px;
+  letter-spacing: 2px;
+  font-size: 60px;
+}
+
+.card-info h1 {
+  font-size: 40px;
+}
+
+.card-info h2 {
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+}
+
+/*Button*/
+.card-info button {
+  padding: 2em 4em;
+  outline: none;
+  position: relative;
+  top: 50px;
+  border: none;
+  border-radius: 4px;
+  background: dodgerblue;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.4s ease;
+}
+
+/*Image*/
+.card-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to bottom, #e7aeae, #ee9ca7);
+}
+
+.card-img img {
+  border-radius: 5px;
+  width: 700px;
+  height: 700px;
+}
+
+/*Hover*/
+.card:hover {
+  transform: translateY(10%);
+}
+
+.card:hover:before {
+  opacity: 1;
+}
+
+.card:hover .card-info {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card-info button:hover {
+  background-color: dodgerblue;
+  color: #000000;
+}
+
+.card2 {
+  margin-left: 50px;
+  margin-top: 100px;
+  width: 190px;
+  height: 254px;
+  border-radius: 1em;
+  padding: 1.5rem;
+  background: #f5f5f5;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  transition: 0.4s ease-out;
+  box-shadow: 0px 7px 20px rgba(43, 8, 37, 0.2);
+}
+
+.card2:before {
+  content: "$1.25 USD";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 600px;
+  height: 600px;
+  background: rgba(255, 252, 252, 0.1);
+  z-index: 2;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.card2-info {
+  position: relative;
+  z-index: 3;
+  color: #f5f5f5;
+  opacity: 0;
+  transform: translateY(20%);
+  transition: 0.5s;
+}
+
+/*Text*/
+.text-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+}
+
+.text-body {
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  margin: 5px 0 15px 0;
+  color: rgb(255, 255, 255);
+}
+
+/*Button*/
+.card2-button {
+  padding: 0.6rem;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  background: #f5f5f5;
+  color: #000;
+  font-weight: bold;
+  transition: 0.4s ease;
+}
+
+.card2-img img {
+  width: 239px;
+  height: 302px;
+}
+
+/*Image*/
+.card2-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #ee9ca7;
+  background: linear-gradient(to bottom, #e7aeae, #ee9ca7);
+}
+
+/*Hover*/
+.card2:hover {
+  transform: translateY(10%);
+}
+
+.card2:hover:before {
+  opacity: 1;
+}
+
+.card2:hover .card-info {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card2-button:hover {
+  background: dodgerblue;
+  color: #f5f5f5;
+}
+
+.card3 {
+  margin-top: 100px;
+  margin-left: 50px;
+  width: 190px;
+  height: 254px;
+  border-radius: 1em;
+  padding: 1.5rem;
+  background: #f5f5f5;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  transition: 0.4s ease-out;
+  box-shadow: 0px 7px 20px rgba(43, 8, 37, 0.2);
+}
+
+.card3:before {
+  content: "$1.25 USD";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 252, 252, 0.6);
+  z-index: 2;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.card3-info {
+  position: relative;
+  z-index: 3;
+  color: #f5f5f5;
+  opacity: 0;
+  transform: translateY(20%);
+  transition: 0.5s;
+}
+
+/*Text*/
+.text-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.text-body {
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  margin: 5px 0 15px 0;
+}
+
+/*Button*/
+.card3-button {
+  padding: 0.6rem;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  background: #f5f5f5;
+  color: #000;
+  font-weight: bold;
+  transition: 0.4s ease;
+}
+
+/*Image*/
+.card3-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to bottom, #e7aeae, #ee9ca7);
+}
+
+/*Hover*/
+.card3:hover {
+  transform: translateY(10%);
+}
+
+.card3:hover:before {
+  opacity: 1;
+}
+
+.card3:hover .card-info {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card-button:hover {
+  background: dodgerblue;
+  color: #f5f5f5;
+}
+
+.card4 {
+  margin-top: 100px;
+  margin-left: 50px;
+  width: 190px;
+  height: 254px;
+  border-radius: 1em;
+  padding: 1.5rem;
+  background: #f5f5f5;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  transition: 0.4s ease-out;
+  box-shadow: 0px 7px 20px rgba(43, 8, 37, 0.2);
+}
+
+.card4:before {
+  content: "$1.25 USD";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 252, 252, 0.6);
+  z-index: 2;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.card4-info {
+  position: relative;
+  z-index: 3;
+  color: #f5f5f5;
+  opacity: 0;
+  transform: translateY(20%);
+  transition: 0.5s;
+}
+
+/*Text*/
+.text-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.text-body {
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  margin: 5px 0 15px 0;
+}
+
+/*Button*/
+.card-button {
+  padding: 0.6rem;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  background: #f5f5f5;
+  color: #000;
+  font-weight: bold;
+  transition: 0.4s ease;
+}
+
+/*Image*/
+.card4-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to bottom, #e7aeae, #ee9ca7);
+}
+
+/*Hover*/
+.card4:hover {
+  transform: translateY(10%);
+}
+
+.card4:hover:before {
+  opacity: 1;
+}
+
+.card4:hover .card-info {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card4-button:hover {
+  background: dodgerblue;
+  color: #f5f5f5;
+}
+
+/*Boton youtube*/
+/* Footer */
+
+.anunciosocialmedia {
+  width: 100%;
+  height: 800px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background-color: #FFFFFF;
+}
+
+.socialmediaadds {
+  display: grid;
+  grid-template-columns: 25% 20%;
+}
+
+.socialmediaadds h1 {
+  font-size: 10em;
+  font-weight: 900;
+  display: flex;
+  display: flex;
+  position: relative;
+  left: 170px;
+  top: 50px;
+}
+
+#twsocial {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  position: relative;
+  top: 300px;
+  left: 650px;
+}
+
+#socialaviso {
+  display: flex;
+  position: relative;
+  width: 600px;
+  height: 600px;
+  top: 100px;
+  left: 100px;
+}
+.storesongs{
+  position: relative;
+}
+
+.redessociales {
+  background-color: #ffffff;
+  width: 100%;
+  height: 800px;
+  position: relative;
+  display: grid;
+  grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10%;
+  position: relative;
+  padding-top: 200px;
+  justify-content: center;
+  text-align: center;
+}
+
+#Sheneedsflowers {
+  display: flex;
+  width: 170px;
+  height: 170px;
+  margin: 10px;
+}
+.Sheneedsflowers{
+  font-size: 25px;
+  color: rgb(0, 0, 0);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#Nonstop{
+  display: flex;
+  width: 170px;
+  height: 170px;
+  margin: 10px;
+}
+.Nonstop {
+  font-size: 25px;
+  color: rgb(0, 0, 0);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+#Feelthenigth{
+  display: flex;
+  width: 170px;
+  height: 170px;
+  margin: 10px;
+}
+
+.Feelthenigth {
+  font-size: 25px;
+  color: rgb(0, 0, 0);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#Everybodyaresummer{
+  display: flex;
+  width: 170px;
+  height: 170px;
+  margin: 10px;
+}
+.Everybodyaresummer {
+  font-size: 25px;
+  color: rgb(0, 0, 0);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#Shewasnt {
+  display: flex;
+  width: 170px;
+  height: 170px;
+  margin: 10px;
+}
+.Shewasnt {
+  font-size: 25px;
+  color: rgb(0, 0, 0);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#Lovesick{
+  display: flex;
+  width: 170px;
+  height: 170px;
+  margin: 10px;
+}
+.Lovesick{
+  font-size: 25px;
+  color: rgb(0, 0, 0);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#Lovehurts {
+  display: flex;
+  width: 170px;
+  height: 170px;
+  margin: 10px;
+}
+
+.Lovehurts{
+  font-size: 25px;
+  color: black;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#Forever {
+  display: flex;
+  width: 170px;
+  height: 170px;
+  margin: 10px;
+}
+
+
+.Forever {
+  font-size: 25px;
+  color: rgb(0, 0, 0);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.infoalbum{
+  position: relative;
+  bottom: 350px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.infoalbum h1{
+  font-size: 50px;
+  text-align-last: center;
+  font-weight: 900;
+  color: #000;
+}
+
+.infoalbum h1:hover{
+  border: solid 1.4px rgb(255, 255, 255);
+  cursor: pointer;
+  font-size: 52px;
+  background: rgb(0, 0, 0);
+  color: white;
+  animation: animate 10s infinite ease-in-out;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/*Hover*/
+
+
+.footer {
+  background: black;
+  width: 100%;
+  color: white;
+  height: 400px;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-mainfooter {
+  position: relative;
+  top: 100px;
+  display: grid;
+  border: none;
+}
+
+.nav-menufooter {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
+.nav-menufooter a {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-size: 38px;
+}
+
+.nav-menufooter a:hover {
+  color: rgb(255, 255, 255);
+  font-size: 35px;
+  
+}
+
+.piepag {
+  width: 100%;
+  height: 250px;
+  display: block;
+  background-color: black;
+  align-items: center;
+  justify-content: center;
+}
+
+.piepag div {
+  display: flex;
+  background-color: #000;
+  justify-content: center;
+}
+
+.piepag img {
+  position: relative;
+  top: -130px;
+  width: 300px;
+  height: 300px;
+}
+
+.piepag h5 {
+  background-color: #000;
+  position: relative;
+  top: -100px;
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/*--------------------------------------------------------------------------Responsive Laptop---------------------------------------------------------------------------------- */
+@media (max-width: 1800px) {
+
+  .container{
+    height: 600px;
+    background-image: url(/imgnonstop/IMG_1091.JPG);
+    background-position: 0px -240px;
+    background-size: cover;
+  }
+
+  .nav-main {
+    font-size: 30px;
+  }
+
+  .nav-main li a:hover {
+    font-size: 28px;
+    border-bottom: none;
+  }
+
+  .nav-main2 {
+    font-size: 28px;
+  }
+
+  .nav-main2 li a:hover {
+    font-size: 25px;
+    border-bottom: none;
+  }
+
+  .nav-menurigth {
+    position: relative;
+    right: 50%;
+  }
+
+  .cta span {
+    padding-bottom: 7px;
+    letter-spacing: 4px;
+    font-size: 13px;
+    padding-right: 15px;
+    text-transform: uppercase;
+  }
+
+  .animated-background{
+    height: 1200px;
+  }
+
+  .titulostore{
+    position: relative;
+    top: 40px;
+  }
+  .titulostore h1 {
+    padding: 30px;
+    position: relative;
+    top: 80px;
+    color: #000000;
+    font-size: 110px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+
+.tiendamusic{
+  top: 50px;
+}
+  .titulomusica h1 {
+    position: relative;
+    top: 270px;
+    left: -70px;
+    text-align: center;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .titulomusica h2{
+    width: 200px;
+    position: relative;
+    top: 250px;
+    left: 35%;
+    padding-left: 60px;
+    text-align: center;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #applemusic {
+    width: 150px;
+    height: 50px;
+    position: relative;
+    top: 60px;
+    right: 140px;
+    cursor: pointer;
+    
+  }
+  
+  #playstoremusic {
+    width: 150px;
+    height: 50px;
+    position: relative;
+    top: 2px;
+    left: 0px;
+    cursor: pointer;
+    
+    
+  }
+  .titulomusica p {
+    left: 30px;
+    position: relative;
+    font-size: 18px;
+    top: 290px;
+    width: 550px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .buy {
+    padding: 0.5em 1.5em;
+    font-size:  1.5em;
+    position: relative;
+    left: 31%;
+    top: 320px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+  
+  }
+  
+  .buy:hover{
+    padding: 0.5em 1.5em;
+    background-color: rgb(255, 255, 255);
+    border: solid grey 0.5px;
+    box-shadow: 1px 4px 5px black;
+    color: black;
+    position: relative;
+    top:320px;
+    font-size: 1.5em;
+  }
+  
+
+  .card {
+    margin-top: 100px;
+    margin-left: 50px;
+    width: 500px;
+    height: 500px;
+    border-radius: 1em;
+    padding: 1.5rem;
+    background: #f5f5f5;
+    position: relative;
+    left: 0;
+    top: 70px;
+    display: flex;
+    align-items: flex-end;
+    transition: 0.4s ease-out;
+    box-shadow: 0px 7px 20px rgba(43, 8, 37, 0.2);
+  }
+  .card-img img {
+    width: 600px;
+    height: 600px;
+  }
+  card-img {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom, #e7aeae, #ee9ca7);
+  }
+  .card:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 600px;
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    z-index: 2;
+    transition: 0.5s;
+    opacity: 0;
+  }
+  .card-info {
+    width: 350px;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    left: 18%;
+    bottom: 40%;
+    z-index: 3;
+    color: #f5f5f5;
+    opacity: 0;
+    transform: translateY(20%);
+    transition: 0.5s;
+  }
+  .card-info p {
+    position: relative;
+    bottom: 20px;
+    letter-spacing: 2px;
+    font-size: 40px;
+  }
+  
+  .card-info h1 {
+    font-size: 40px;
+  }
+  
+  .card-info h2 {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+  }
+  
+  /*Button*/
+  .card-info button {
+    padding: 2em 4em;
+    outline: none;
+    position: relative;
+    top: 50px;
+    border: none;
+    border-radius: 4px;
+    background: dodgerblue;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.4s ease;
+  }
+  .anunciosocialmedia {
+    width: 100%;
+    height: 800px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: #ffffff;
+  }  
+
+  .socialmediaadds {
+    display: grid;
+    grid-template-columns: 25% 20%;
+  }
+  
+  .socialmediaadds h1 {
+    font-size: 8em;
+    font-weight: 900;
+    display: flex;
+    display: flex;
+    color: rgb(0, 0, 0);
+    position: relative;
+    left: 70px;
+    top: 50px;
+  }
+  .socialmediaimg{
+    position: relative;
+    right: 20px;
+  }
+  #twsocial {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    position: relative;
+    top: 300px;
+    box-shadow: 1px 1px 2px 1px black;
+    left: 500px;
+  }
+  
+  #socialaviso {
+    display: flex;
+    position: relative;
+    width: 500px;
+    height: 500px;
+    top: 100px;
+    left: 150px;
+  }
+
+  .storesongs{
+    position: relative;
+    bottom: 200px;
+  }
+  .redessociales {
+    background-color: #ffffff;
+    width: 100%;
+    height: 500px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10%;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  #Sheneedsflowers {
+    display: flex;
+    width: 120px;
+    height: 120px;
+    margin: 10px;
+  }
+  .Sheneedsflowers{
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  #Nonstop{
+    display: flex;
+    width: 120px;
+    height: 120px;
+    margin: 10px;
+  }
+  .Nonstop {
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  
+  #Feelthenigth{
+    display: flex;
+    width: 120px;
+    height: 120px;
+    margin: 10px;
+  }
+  
+  .Feelthenigth {
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  #Everybodyaresummer{
+    display: flex;
+    width: 120px;
+    height: 120px;
+    margin: 10px;
+  }
+  .Everybodyaresummer {
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  #Shewasnt {
+    display: flex;
+    width: 120px;
+    height: 120px;
+    margin: 10px;
+  }
+  .Shewasnt {
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  #Lovesick{
+    display: flex;
+    width: 120px;
+    height: 120px;
+    margin: 10px;
+  }
+  .Lovesick{
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  #Lovehurts {
+    display: flex;
+    width: 120px;
+    height: 120px;
+    margin: 10px;
+  }
+  
+  .Lovehurts{
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  #Forever {
+    display: flex;
+    width: 120px;
+    height: 120px;
+    margin: 10px;
+  }
+  
+  .Forever {
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  .infoalbum{
+    position: relative;
+    bottom: 250px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .infoalbum h1{
+    font-size: 35px;
+    position: relative;
+    top: 70px;
+    text-align-last: center;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+  }
+  .infoalbum h1:hover{
+    border: solid 1.4px rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 35px;
+    background: rgb(0, 0, 0);
+    color: white;
+    animation: animate 10s infinite ease-in-out;
+  }
+  .footer {
+    background: black;
+    width: 97%;
+    color: white;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-mainfooter {
+    position: relative;
+    top: -170px;
+    display: grid;
+    border: none;
+  }
+
+  .nav-menufooter a {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 25px;
+  }
+  .nav-menufooter a:hover {
+    color: rgb(255, 255, 255);
+    font-size: 28px; 
+  }
+  .piepag {
+    width: 100%;
+    height: 250px;
+    display: block;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .piepag div {
+    display: flex;
+    background-color: #000;
+    justify-content: center;
+  }
+  
+  .piepag img {
+    position: relative;
+    top: -250px;
+    width: 250px;
+    height: 250px;
+  }
+  
+  .piepag h5 {
+    background-color: #000;
+    position: relative;
+    top: -250px;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------*/
+
+@media (max-width: 1150px) {
+
+.container {
+  height: 600px;
+}
+
+.titulostore h1 {
+  padding: 30px;
+  position: relative;
+  top: 80px;
+  color: #000000;
+  font-size: 80px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.card {
+  margin-top: 100px;
+  margin-left: 50px;
+  width: 300px;
+  height: 300px;
+  border-radius: 1em;
+  padding: 1.5rem;
+  background: #f5f5f5;
+  position: relative;
+  left: 0;
+  top: 150px;
+  display: flex;
+  align-items: flex-end;
+  transition: 0.4s ease-out;
+  box-shadow: 0px 7px 20px rgba(43, 8, 37, 0.2);
+}
+.card-img img {
+  width: 400px;
+  height: 400px;
+}
+card-img {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to bottom, #e7aeae, #ee9ca7);
+}
+.card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 400px;
+  height: 400px;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  z-index: 2;
+  transition: 0.5s;
+  opacity: 0;
+}
+.card-info {
+  width: 250px;
+  height: 75px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  left: 18%;
+  bottom: 40%;
+  z-index: 3;
+  color: #f5f5f5;
+  opacity: 0;
+  transform: translateY(20%);
+  transition: 0.5s;
+}
+.card-info p {
+  position: relative;
+  bottom: 20px;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+
+.card-info h1 {
+  font-size: 20px;
+}
+
+.card-info h2 {
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+
+/*Button*/
+.card-info button {
+  padding: 2em 4em;
+  outline: none;
+  position: relative;
+  top: 50px;
+  border: none;
+  border-radius: 4px;
+  background: dodgerblue;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+.titulomusica {
+  position: relative;
+  top: 67px;
+}
+
+.titulomusica h1 {
+  position: relative;
+  top: 190px;
+  left: -60px;
+  text-align: center;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.titulomusica h2{
+  width: 200px;
+  position: relative;
+  top: 172px;
+  left: 23%;
+  text-align: center;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#applemusic {
+  width: 130px;
+  height: 50px;
+  position: relative;
+  top: 65px;
+  right: 120px;
+  cursor: pointer;
+}
+
+#playstoremusic {
+  width: 130px;
+  height: 50px;
+  position: relative;
+  top:13px;
+  left: 1%;
+  cursor: pointer;
+  
+  
+}
+.titulomusica p {
+  position: relative;
+  font-size: 16px;
+  top: 240px;
+  width: 530px;
+  left: -40px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.buy{
+  left: 135px;
+  position: relative;
+  top: 280px;
+}
+
+.buy:hover{
+  left: 135px;
+  position: relative;
+  top: 280px;
+}
+.socialmediaadds h1 {
+  font-size: 6em;
+  font-weight: 900;
+  display: flex;
+  display: flex;
+  color: rgb(0, 0, 0);
+  position: relative;
+  left: 70px;
+  top: 50px;
+}
+.socialmediaimg{
+  position: relative;
+  right: 20px;
+}
+#twsocial {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  position: relative;
+  top: 300px;
+  box-shadow: 1px 1px 2px 1px black;
+  left: 300px;
+}
+
+#socialaviso {
+  display: flex;
+  position: relative;
+  width: 500px;
+  height: 500px;
+  top: 100px;
+  left: 50px;
+}
+
+#Sheneedsflowers {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+.Sheneedsflowers{
+  font-size: 10px;
+  color: rgb(0, 0, 0);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#Nonstop{
+  display: flex;
+  width:100px;
+  height: 100px;
+  margin: 10px;
+}
+.Nonstop {
+  font-size: 10px;
+  color: rgb(0, 0, 0);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+#Feelthenigth{
+  display: flex;
+  width: 100px;
+  height:100px;
+  margin: 10px;
+}
+
+.Feelthenigth {
+  font-size: 10px;
+  color: rgb(0, 0, 0);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#Everybodyaresummer{
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+.Everybodyaresummer {
+  font-size: 10px;
+  color: rgb(0, 0, 0);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#Shewasnt {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+.Shewasnt {
+  font-size: 10px;
+  color: rgb(0, 0, 0);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#Lovesick{
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+.Lovesick{
+  font-size: 10px;
+  color: rgb(0, 0, 0);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#Lovehurts {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+
+.Lovehurts{
+  font-size: 10px;
+  color: rgb(0, 0, 0);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#Forever {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+
+.Forever {
+  font-size: 10px;
+  color: rgb(0, 0, 0);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.infoalbum h1{
+  font-size: 26px;
+  position: relative;
+  top: 70px;
+  text-align-last: center;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+}
+.infoalbum h1:hover{
+  border: solid 1.4px rgb(255, 255, 255);
+  cursor: pointer;
+  font-size: 25px;
+  background: rgb(0, 0, 0);
+  color: white;
+  animation: animate 10s infinite ease-in-out;
+}
+}
+
+@media (max-width: 1024px) {
+  nav-main ul li a {
+    padding: 40px;
+    color: #ffffff;
+  }
+
+  .nav-main {
+    position: relative;
+    top: 50px;
+    padding: 25px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 200px;
+  }
+
+#twsocial {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  position: relative;
+  top: 170px;
+  box-shadow: 1px 1px 2px 1px black;
+  left: 350px;
+}
+
+#socialaviso {
+  display: flex;
+  position: relative;
+  width: 350px;
+  height: 350px;
+  top: 100px;
+  left: 120px;
+}
+.titulomusica p {
+  left:-10px;
+  position: relative;
+  font-size: 15px;
+  top: 220px;
+  width: 450px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+}
+@media (max-width: 990px){
+  .titulomusica h1 {
+    position: relative;
+    top: 200px;
+    left: -50px;
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .titulomusica h2{
+    width: 200px;
+    position: relative;
+    top: 175px;
+    left: 30%;
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #applemusic {
+    width: 180px;
+    height: 57px;
+    position: relative;
+    top: 65px;
+    right: 150px;
+    cursor: pointer;
+    
+  }
+  
+  #playstoremusic {
+    width: 180px;
+    height: 55px;
+    position: relative;
+    top: 6px;
+    left: -5%;
+    cursor: pointer;
+    
+    
+  }
+  .titulomusica p {
+    position: relative;
+    font-size: 17px;
+    top: 210px;
+    width: 430px;
+    left: -10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .buy{
+    position: relative;
+    left:25%;
+    top: 250px;
+  }
+
+
+  }
+
+@media (max-width: 840px){
+  .nav-main{
+    position: relative;
+    left: 10%;
+    font-size: 34px;
+  }
+  .titulostore h1{
+    font-size: 60px;
+  }
+    .card {
+    position: relative;
+    left: -30px;
+  }
+  .titulomusica{
+    position: relative;
+    left: 30px;
+  }
+  #applemusic {
+    width: 120px;
+    height: 40px;
+    position: relative;
+    top: 55px;
+    left: -120px;
+    cursor: pointer;
+    
+  }
+
+  .titulomusica h1{
+    font-size: 18px;
+  }
+
+  .titulomusica h2{
+    font-size: 18px;
+    top: 178px;
+    left: 90px;
+  }
+  
+  #playstoremusic {
+    width: 120px;
+    height: 40px;
+    position: relative;
+    top: 11px;
+    left: -2%;
+    cursor: pointer;
+    
+  }
+  .titulomusica p {
+    font-size: 15px;
+    width: 300px;
+    left: 7%;
+  }
+
+  .buy{
+font-size: 1.3em;
+}
+
+#socialaviso{
+position: relative;
+left: 40px;
+}
+
+
+}
+
+
+@media (max-width: 800px) {
+
+  .container{
+    height: 500px;
+  }
+  
+  .nav-main{
+    position: relative;
+    left: 5%;
+    font-size: 10px;
+  }
+  
+  .nav-main li a {
+    bottom: 20px;
+    position: relative;
+    font-size: 25px;
+    border-bottom: none;
+  }
+  .nav-main li a:hover {
+    font-size: 28px;
+    border-bottom: none;
+  }
+  
+  .cta span {
+    padding-bottom: 7px;
+    letter-spacing: 4px;
+    font-size: 10px;
+    padding-right: 15px;
+    text-transform: uppercase;
+  }   
+  
+  .animated-background{
+    height: 800px;
+  }
+
+  .titulostore h1 {
+    padding: 30px;
+    position: relative;
+    top: 80px;
+    background-color: #000;
+    color: #ffffff;
+    font-size: 3.2em;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  
+  .card {
+    margin-top: 100px;
+    margin-left: 50px;
+    width: 220px;
+    height: 220px;
+    border-radius: 1em;
+    padding: 1.5rem;
+    background: #f5f5f5;
+    position: relative;
+    left: 0;
+    top: 70px;
+    display: flex;
+    align-items: flex-end;
+    transition: 0.4s ease-out;
+    box-shadow: 0px 7px 20px rgba(43, 8, 37, 0.2);
+  }
+  .card-img img {
+    width: 280px;
+    height: 280px;
+  }
+  card-img {
+    width: 220px;
+    height: 220px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom, #ffffff, #ffffff);
+  }
+  .card:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 280px;
+    height: 280px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    z-index: 2;
+    transition: 0.5s;
+    opacity: 0;
+  }
+  .card-info {
+    width: 300px;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    left: 2%;
+    bottom: 23%;
+    z-index: 3;
+    color: #f5f5f5;
+    opacity: 0;
+    transform: translateY(20%);
+    transition: 0.5s;
+  }
+  .card-info p {
+    position: relative;
+    bottom: 10px;
+    letter-spacing: 2px;
+    font-size: 25px;
+  }
+  
+  .card-info h1 {
+    font-size: 16px;
+  }
+  
+  .card-info h2 {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+  }
+  
+  /*Button*/
+  .card-info button {
+    padding: 1.5em 3.5em;
+    outline: none;
+    position: relative;
+    top: 50px;
+    border: none;
+    border-radius: 4px;
+    background: dodgerblue;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 10px;
+    cursor: pointer;
+    transition: 0.4s ease;
+  }
+  .titulomusica {
+    position: relative;
+    top: -5px;
+  
+  }
+  .titulomusica h1 {
+    position: relative;
+    top: 170px;
+    left: -60px;
+    text-align: center;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .titulomusica h2{
+    width: 200px;
+    position: relative;
+    top: 153px;
+    left: 10%;
+    text-align: center;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #applemusic {
+    width: 120px;
+    height: 40px;
+    position: relative;
+    top: 48px;
+    right: 100px;
+    cursor: pointer;
+    
+  }
+  
+  #playstoremusic {
+    width: 120px;
+    height: 40px;
+    position: relative;
+    top: 5px;
+    left: 10%;
+    cursor: pointer;
+    
+    
+  }
+  .titulomusica p {
+    left: 8px;
+    position: relative;
+    font-size: 12px;
+    top: 180px;
+    width: 300px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+.buy{
+  position: relative;
+  top:210px;
+  left: 85px;
+  font-size:  1.2em;
+}
+
+  .socialmediaadds h1 {
+    font-size: 5.5em;
+    font-weight: 900;
+    display: flex;
+    display: flex;
+    color: rgb(0, 0, 0);
+    position: relative;
+    left: 40px;
+    top: 100px;
+  }
+  
+  #twsocial {
+    width: 130px;
+    height: 130px;
+    display: flex;
+    position: relative;
+    top: 270px;
+    box-shadow: 1px 1px 2px 1px black;
+    left: 230px;
+  }
+  
+  #socialaviso {
+    display: flex;
+    position: relative;
+    width: 280px;
+    height: 280px;
+    top: 200px;
+    left: 40px;
+  }
+  
+  .redessociales {
+    background-color: #ffffff;
+    width: 100%;
+    height: 500px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10%;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+  }
+  #Sheneedsflowers {
+    display: flex;
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+  }
+  .Sheneedsflowers{
+    font-size: 8px;
+    color: rgb(0, 0, 0);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  #Nonstop{
+    display: flex;
+    width:70px;
+    height: 70px;
+    margin: 10px;
+  }
+  .Nonstop {
+    font-size: 8px;
+    color: rgb(0, 0, 0);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  
+  #Feelthenigth{
+    display: flex;
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+  }
+  
+  .Feelthenigth {
+    font-size: 8px;
+    color: rgb(0, 0, 0);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  #Everybodyaresummer{
+    display: flex;
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+  }
+  .Everybodyaresummer {
+    font-size: 8px;
+    color: rgb(0, 0, 0);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  #Shewasnt {
+    display: flex;
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+  }
+  .Shewasnt {
+    font-size: 8px;
+    color: rgb(0, 0, 0);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  #Lovesick{
+    display: flex;
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+  }
+  .Lovesick{
+    font-size: 8px;
+    color: rgb(0, 0, 0);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  #Lovehurts {
+    display: flex;
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+  }
+  
+  .Lovehurts{
+    font-size: 8px;
+    color: rgb(0, 0, 0);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  #Forever {
+    display: flex;
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+  }
+  
+  .Forever {
+    font-size: 8px;
+    color: rgb(0, 0, 0);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  .infoalbum h1{
+    font-size: 20px;
+    position: relative;
+    top: 70px;
+    text-align-last: center;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+  }
+  .infoalbum h1:hover{
+    border: solid 1.4px rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 19px;
+    background: rgb(0, 0, 0);
+    color: white;
+    animation: animate 10s infinite ease-in-out;
+  }
+  .nav-menufooter a {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 17px;
+  }
+  .nav-menufooter a:hover {
+    color: rgb(255, 255, 255);
+    font-size: 18px; 
+  }
+  .piepag {
+    width: 100%;
+    height: 200px;
+    display: block;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .piepag div {
+    display: flex;
+    background-color: #000;
+    justify-content: center;
+  }
+  
+  .piepag img {
+    position: relative;
+    top: -250px;
+    width: 150px;
+    height: 150px;
+  }
+  
+  .piepag h5 {
+    background-color: #000;
+    position: relative;
+    top: -250px;
+    font-size: 10px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  
+  }
+  
+  @media (max-width: 700px) {
+    
+    .nav-menu {
+      flex-direction: column;
+      margin: 0;
+      background-color: white;
+      position: fixed;
+      top: 70px;
+      width: 100%;
+      padding: 10px 0;
+      height: calc(100% - 60px);
+      overflow-y: auto;
+      left: 100%;
+      transition: left 0.3s;
+      z-index: 10;
+      color: rgb(0, 0, 0);
+    }
+
+  
+    .nav-main li a {
+      position: relative;
+      font-size: 1.5em;
+      margin: 20px;
+      color: rgb(0, 0, 0);
+    }
+  
+    .nav-main ul li a {
+      left: 10%;
+      color: rgb(0, 0, 0);
+    }
+  
+    .nav-main li {
+      margin-top: 0;
+      position: relative;
+      right: 10px;
+      margin: 40px;
+      font-size: 1.5em;
+      color: rgb(0, 0, 0);
+    }
+  
+    .nav-main :hover {
+      color: #000000;
+      font-size: 1.5em;
+    }
+  
+    .nav-main li a:hover {
+      font-size: 1.6em;
+    }
+  
+    .covermenu {
+      display: flex;
+    }
+  
+    .nav-menu2 {
+      display: none;
+    }
+  
+    .nav-toggle {
+      font-size: 3em;
+      display: flex;
+      position: relative;
+      right: 90px;
+      top: -2px;
+      color: rgb(0, 0, 0);
+      border: none;
+    }
+  
+    .nav-menu_visible {
+      left: 0;
+    }
+  
+    .nav-toggle:focus:not(:focus-visible) {
+      outline: none;
+    }
+  
+    .cta span {
+      padding-bottom: 7px;
+      letter-spacing: 4px;
+      font-size: 18px;
+      padding-right: -8px;
+      position: relative;
+      left: 30px;
+      text-transform: uppercase;
+    }
+    .titulomusica h1 {
+      position: relative;
+      top: 105px;
+      left: -9px;
+      text-align: center;
+      font-size: 13px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .titulomusica h2{
+      width: 200px;
+      position: relative;
+      top: 62px;
+      left: 27%;
+      text-align: center;
+      font-size: 13px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    #applemusic {
+      width: 100px;
+      height: 40px;
+      position: relative;
+      top: 55px;
+      left: -100px;
+      cursor: pointer;
+      
+    }
+    
+    #playstoremusic {
+      width: 100px;
+      height: 40px;
+      position: relative;
+      top: 55px;
+      left: -40%;
+      cursor: pointer;
+      
+    }
+
+    .titulomusica {
+      position: relative;
+      top: 70px;
+    }
+    .titulomusica p {
+      position: relative;
+      font-size: 12px;
+      top: 140px;
+      width: 300px;
+      left: 10px;
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .buy{
+      position: relative;
+      top: 170px;
+      left: 99px;
+      font-size: 1em;
+    }
+    .buy:hover{
+      position: relative;
+      top: 170px;
+      left: 105px;
+    }
+    .socialmediaadds h1 {
+      font-size: 5em;
+      font-weight: 900;
+      display: flex;
+      display: flex;
+      color: rgb(0, 0, 0);
+      position: relative;
+      left: 70px;
+      top: 50px;
+    }
+
+    #Sheneedsflowers {
+      display: flex;
+      width: 60px;
+      height: 60px;
+      margin: 10px;
+    }
+    .Sheneedsflowers{
+      font-size: 9px;
+      color: rgb(0, 0, 0);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    #Nonstop{
+      display: flex;
+      width: 60px;
+      height: 60px;
+      margin: 10px;
+    }
+    .Nonstop {
+      font-size: 9px;
+      color: rgb(0, 0, 0);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    
+    #Feelthenigth{
+      display: flex;
+      width: 60px;
+      height: 60px;
+      margin: 10px;
+    }
+    
+    .Feelthenigth {
+      font-size: 9px;
+      color: rgb(0, 0, 0);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    #Everybodyaresummer{
+      display: flex;
+      width: 60px;
+      height: 60px;
+      margin: 10px;
+    }
+    .Everybodyaresummer {
+      font-size: 9px;
+      color: rgb(0, 0, 0);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    #Shewasnt {
+      display: flex;
+      width: 60px;
+      height: 60px;
+      margin: 10px;
+    }
+    .Shewasnt {
+      font-size: 9px;
+      color: rgb(0, 0, 0);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    #Lovesick{
+      display: flex;
+      width: 60px;
+      height: 60px;
+      margin: 10px;
+    }
+    .Lovesick{
+      font-size: 9px;
+      color: rgb(0, 0, 0);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    #Lovehurts {
+      display: flex;
+      width: 60px;
+      height: 60px;
+      margin: 10px;
+    }
+    
+    .Lovehurts{
+      font-size: 9px;
+      color: rgb(0, 0, 0);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    #Forever {
+      display: flex;
+      width: 60px;
+      height: 60px;
+      margin: 10px;
+    }
+    
+    .Forever {
+      font-size: 9px;
+      color: rgb(0, 0, 0);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+  }
+  @media (max-width: 600px) {
+    .nav-toggle{
+      width: 90px;
+      height: 40px;
+
+      position: relative;
+      right: 100px;
+    }
+    .cta span {
+      padding-bottom: 7px;
+      letter-spacing: 4px;
+      font-size: 10px;
+      padding-right: 80px;
+      position: relative;
+      left: -17%;
+      text-transform: uppercase;
+    }
+    .hover-underline-animation {
+      position: relative;
+      color: rgb(0, 0, 0);
+      padding-bottom: 10px;
+    }
+    #arrow-horizontal {
+      position: relative;
+      right: 80px;
+      display: none;
+    }
+    .nav-menurigth ion-icon {
+      color: #ffffff;
+      width: 20px;
+      display: none;
+      height: 20px;
+    }
+    .nav-main{
+      position: relative;
+      left: 5%;
+      font-size: 10px;
+    }
+    
+    nav-menu{
+      border: solid wheat;
+    }
+    .nav-main li a {
+      position: relative;
+      bottom: 500px;
+      position: relative;
+      font-size: 30px;
+      border-bottom: none;
+    }
+    .nav-main li a:hover {
+      font-size: 20px;
+      border-bottom: none;
+    }
+    .nav-main{
+      position: relative;
+      left: 5%;
+      font-size: 20px;
+    }
+    
+    .nav-main li a {
+      bottom: 20px;
+      position: relative;
+      font-size: 25px;
+      border-bottom: none;
+    }
+    .nav-main li a:hover {
+      font-size: 20px;
+      border-bottom: none;
+    }
+    
+    .titulostore h1 {
+      padding: 30px;
+      position: relative;
+      top: 80px;
+      background-color: #000;
+      color: #ffffff;
+      font-size: 2.3em;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .animated-background{
+      height:1200px;
+    }
+    .tiendamusic {
+      color: #000;
+      width: 100%;
+      height: 2000px;
+      display: block;
+    }
+    .card{
+      position: relative;
+      left: 18%;
+      bottom: 10%;
+    }
+
+    .titulomusica
+    {
+      position: relative;
+      top: 90px;
+    }
+    .titulomusica h1 {
+      position: relative;
+      top: 20px;
+      left: -2%;
+      text-align: center;
+      font-size: 15px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .titulomusica h2{
+      width: 200px;
+      position: relative;
+      top: 5px;
+      left: 32%;
+      text-align: center;
+      font-size: 15px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    #applemusic {
+      width: 130px;
+      height: 50px;
+      position: relative;
+      top: 60px;
+      left: -115px;
+      cursor: pointer;
+      
+    }
+
+    #playstoremusic {
+      width: 130px;
+      height: 50px;
+      position: relative;
+      top: 5px;
+      left: 1%;
+      cursor: pointer;
+      
+      
+    }
+    .titulomusica p {
+      top: 50px;
+      font-size: 12px;
+      left: 23%;
+    }
+
+.buy{
+  position: relative;
+  left: 38%;
+  font-size: 1.2em;
+  top: 90px;
+}
+.buy:hover{
+  position: relative;
+  left: 44%;
+  font-size: 1.2em;
+  top: 90px;
+}
+    .socialmediaadds{
+      border: solid white;
+      text-align: center;
+      justify-content: center;
+
+    }
+    .socialmediaadds h1 {
+      text-align: center;
+      font-size: 40px;
+      width: 300px;
+      height: 50px;
+      position: relative;
+      top: 50px;
+      left: 72px;
+    }
+    #socialaviso {
+      display: flex;
+      position: relative;
+      width: 300px;
+      height: 300px;
+      top: 200px;
+      left: -130px;
+    }
+
+#twsocial {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  position: relative;
+  top: 200px;
+  left: 50px;
+}
+.redessociales {
+  background-color: #ffffff;
+  width: 400px;
+  height: 800px;
+  position: relative;
+  display: grid;
+  grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10%;
+  position: relative;
+  padding-top: 200px;
+  justify-content: center;
+  text-align: center;
+}
+
+.redessociales {
+  background-color: #ffffff;
+  width: 100%;
+  height: 800px;
+  position: relative;
+  display: grid;
+  grid-template-columns: 10% 10% 10% 10% ;
+  position: relative;
+  padding-top: 100px;
+  justify-content: center;
+  text-align: center;
+  display: none;
+}
+
+#Sheneedsflowers {
+  display: flex;
+  width: 90px;
+  height: 90px;
+  margin-left:80px;
+}
+.Sheneedsflowers{
+  margin-left:-200px;
+  font-size: 10px;
+  color: rgb(0, 0, 0);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#Nonstop{
+  display: flex;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+.Nonstop {
+  font-size: 10px;
+  color: rgb(0, 0, 0);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+#Feelthenigth{
+  display: flex;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+
+.Feelthenigth {
+  font-size: 10px;
+  color: rgb(0, 0, 0);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#Everybodyaresummer{
+  display: flex;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+.Everybodyaresummer {
+  font-size: 10px;
+  color: rgb(0, 0, 0);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#Shewasnt {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+.Shewasnt {
+  font-size: 10px;
+  color: rgb(0, 0, 0);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#Lovesick{
+  display: flex;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+.Lovesick{
+  font-size: 10px;
+  color: rgb(0, 0, 0);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#Lovehurts {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+
+.Lovehurts{
+  font-size: 10px;
+  color: black;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#Forever {
+  display: flex;
+  width: 50px;
+  height: 50;
+  margin: 10px;
+}
+
+
+.Forever {
+  font-size: 10px;
+  color: rgb(0, 0, 0);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.infoalbum h1{
+  position: relative;
+  top: 300px;
+
+}
+
+.footer {
+  background: black;
+  width: 100%;
+  color: white;
+  height: 400px;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-mainfooter {
+  position: relative;
+  top: 100px;
+  display: grid;
+  border: none;
+}
+
+.nav-menufooter {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
+.nav-menufooter a {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+.nav-menufooter a:hover {
+  color: rgb(255, 255, 255);
+  
+}
+
+.piepag {
+  width: 100%;
+  height: 250px;
+  display: block;
+  background-color: black;
+  align-items: center;
+  justify-content: center;
+}
+
+.piepag div {
+  display: flex;
+  background-color: #000;
+  justify-content: center;
+}
+
+.piepag img {
+  position: relative;
+  top: -190px;
+  width: 200px;
+  height: 200px;
+}
+
+.piepag h5 {
+  background-color: #000;
+  position: relative;
+  top: -100px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+  }
+  @media (max-width: 550px){
+    .cta span {
+      padding-bottom: 7px;
+      letter-spacing: 4px;
+      font-size: 9px;
+      padding-right: 80px;
+      position: relative;
+      left: -27%;
+      text-transform: uppercase;
+    }
+    .card{
+      position: relative;
+      left: 0%;
+      bottom: 10%;
+    }
+
+    .titulomusica h1 {
+      position: relative;
+      top: 20px;
+      left: -2%;
+      text-align: center;
+      font-size: 13px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .titulomusica h2{
+      width: 200px;
+      position: relative;
+      top: 5px;
+      left: 30%;
+      text-align: center;
+      font-size: 13px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    #applemusic {
+      width: 130px;
+      height: 50px;
+      position: relative;
+      top: 58px;
+      left: -115px;
+      cursor: pointer;
+      
+    }
+
+    #playstoremusic {
+      width: 130px;
+      height: 50px;
+      position: relative;
+      top: 5px;
+      left: 1%;
+      cursor: pointer;
+      
+      
+    }
+
+    .card{
+      position: relative;
+      left: 4%;
+    }
+.titulomusica{
+  position: relative;
+  left: 1px;
+}
+
+.titulomusica p{
+  position: relative;
+  left: 60px;
+}
+
+.buy{
+  position: relative;
+  left: 35%;
+}
+
+.buy:hover{
+    position: relative;
+    left: 35%;
+  }
+
+    .socialmediaadds h1 {
+      text-align: center;
+      font-size: 35px;
+      width: 300px;
+      height: 50px;
+      position: relative;
+      top: 50px;
+      left: 10px;
+    }
+  }
+
+  @media (max-width: 380px){
+
+    .nav-toggle{
+      left: -100px;
+    }
+.container{
+  height: 400px;
+}
+    .cta span {
+      padding-bottom: 7px;
+      letter-spacing: 4px;
+      font-size: 7px;
+      padding-right: 80px;
+      position: relative;
+      left: -25%;
+      text-transform: uppercase;
+    }
+
+    .titulostore {
+      font-size: 20px;
+    }
+    .card{
+      position: relative;
+      left: 0%;
+      bottom: 10%;
+    }
+   .titulomusica{
+    position: relative;
+    top: 150px;
+   }
+    .titulomusica h1 {
+      position: relative;
+      top: -20px;
+      left: -5%;
+      text-align: center;
+      font-size: 12px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .titulomusica h2{
+      width: 90px;
+      position: relative;
+      top:-35px;
+      left: 150px;
+      text-align: center;
+      font-size: 12px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #applemusic {
+      width: 110px;
+      height: 50px;
+      position: relative;
+      top: 55px;
+      left: -100px;
+      cursor: pointer;
+      
+    }
+
+    #playstoremusic {
+      width: 110px;
+      height: 50px;
+      position: relative;
+      top: 2px;
+      left: -5%;
+      cursor: pointer;
+      
+      
+  }
+  .titulomusica p {
+    top: 20px;
+    font-size: 11px;
+    left: 10%;
+  }
+  
+
+  .buy{
+    left: 33%;
+    top: 80px;
+  }
+
+  .buy:hover{
+    left: 39%;
+    top: 80px;
+  }
+  }
+  @media (max-width: 320px){
+    .nav-toggle{
+      width: 90px;
+      height: 40px;
+      left: -87px;
+  }
+  .cta span {
+    padding-bottom: 7px;
+    letter-spacing: 4px;
+    font-size: 7px;
+    padding-right: 80px;
+    position: relative;
+    left: -37%;
+    text-transform: uppercase;
+  }
+
+  .card{
+    position: relative;
+    left:-9%;
+}
+.titulomusica{
+  top: 200px;
+}
+.titulomusica h1 {
+  position: relative;
+  top: -90px;
+  left: 0%;
+  text-align: center;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.titulomusica h2{
+  width: 200px;
+  position: relative;
+  left: 200px;
+  top: -143px;
+  text-align: center;
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#applemusic {
+  width: 130px;
+  height: 50px;
+  position: relative;
+  top: 60px;
+  left: -110px;
+  cursor: pointer;
+  
+}
+
+#playstoremusic {
+  width: 130px;
+  height: 50px;
+  position: relative;
+  top: 60px;
+  left: -50%;
+  cursor: pointer;
+}
+
+.titulomusica p {
+  top: -50px;
+  font-size: 10px;
+  left: 5%;
+}
+
+.buy{
+  left: 32%;
+  top: -10px;
+}
+
+.buy:hover{
+  left: 32%;
+  top: -10px;
+}
+}/*# sourceMappingURL=styleindex.css.map */
+/*# sourceMappingURL=styleindex.css.map */
+/*# sourceMappingURL=styleindex.css.map */
+
+/*# sourceMappingURL=stylestore.css.map */
